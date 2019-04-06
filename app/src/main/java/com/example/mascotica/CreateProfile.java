@@ -1,7 +1,10 @@
 package com.example.mascotica;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.reque.mascotica.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class CreateProfile extends AppCompatActivity {
 
