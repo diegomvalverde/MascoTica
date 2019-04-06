@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notifications">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="675dp"
+        android:addStatesFromChildren="false"
+        android:alwaysDrawnWithCache="true"
+        android:background="?android:attr/windowBackground"
+        android:visibility="visible"
+        app:itemBackground="@color/colorAccent"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/navigation1" />
+
+</android.support.constraint.ConstraintLayout>
