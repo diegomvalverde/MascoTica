@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MascoTica</string>
+    <string name="title_activity_notifications">notification</string>
+    <string name="title_home">Home</string>
+    <string name="title_Donate">Donate</string>
+    <string name="title_Favorites">Favs</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_Profile">Profile</string>
+    <string name="title_activity_home_page">homePage</string>
+    <string name="title_activity_donations">donations</string>
 </resources>
