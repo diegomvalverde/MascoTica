@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "MainActivity1";
+    private static final String TAG = "MainActivity";
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     private void addUser()
@@ -56,32 +56,32 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    private void getUser()
-    {
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
-
-        Query query = reference.child("issue").orderByChild("id").equalTo(0);
-        query.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                if (dataSnapshot.exists()) {
-                    // dataSnapshot is the "issue" node with all children with id 0
-                    for (DataSnapshot issue : dataSnapshot.getChildren()) {
-                        // do something with the individual "issues"
-                    }
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-    }
+//    private void getUser()
+//    {
+//        DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+//
+//        Query query = reference.child("issue").orderByChild("id").equalTo(0);
+//        query.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//                if (dataSnapshot.exists()) {
+//                    // dataSnapshot is the "issue" node with all children with id 0
+//                    for (DataSnapshot issue : dataSnapshot.getChildren()) {
+//                        // do something with the individual "issues"
+//                    }
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {
+//
+//            }
+//        });
+//    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        getUser();
+        setContentView(R.layout.activity_create_profile);
+//        getUser();
     }
 }
